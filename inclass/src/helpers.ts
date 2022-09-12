@@ -1,6 +1,6 @@
 
 const URL = 'https://clean-answers.herokuapp.com/'
-// const URL = 'http://localhost:3000/'
+const fetch = require("node-fetch")
 export const fetchAnswer = async (excercise: string, answer: string) => {
     const api = await fetch(`${URL}bigo/${excercise}`, {
         method: 'POST',
